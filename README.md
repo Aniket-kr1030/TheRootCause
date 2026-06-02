@@ -143,7 +143,7 @@ All databases, caches, queues, and services map to standard ports on the local n
 | :--- | :--- | :--- |
 | **`3000`** | `web-app` | Client Next.js Portal |
 | **`3005`** | `admin-panel` | Admin Web Panel (Nginx) |
-| **`8000`** | `api-gateway` | Express/TypeScript Gateway |
+| **`8000`** | `api-gateway` | FastAPI / Python Gateway |
 | **`5432`** | `postgres` | User DB (`user_db`), Content DB (`content_db`), Moderation DB (`moderation_db`) |
 | **`6379`** | `redis` | Redis Cache Store |
 | **`5672`** | `rabbitmq` | RabbitMQ Message Queue (AMQP Broker) |
@@ -156,7 +156,7 @@ All databases, caches, queues, and services map to standard ports on the local n
 
 ### Local Environment Setup
 
-Ensure you have **Node.js** (v20+) and **Docker Desktop** installed on your system.
+Ensure you have **Docker Desktop**, **Python (v3.11+)**, and **Node.js (v20+)** installed on your system.
 
 #### 1. Running the Complete Stack
 
