@@ -1,0 +1,15 @@
+{
+  "name": "the-root-cause",
+  "version": "1.0.0",
+  "description": "Civic intelligence platform for documenting public problems and analyzing root causes",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev:infra": "docker compose -f docker-compose.infra.yml up -d",
+    "dev:apps": "docker compose up --build",
+    "down": "docker compose down"
+  }
+}
